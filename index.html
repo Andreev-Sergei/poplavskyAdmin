@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/adminMaster.css">
+    <title>POPLAVSKY ADMIN</title>
+</head>
+
+<body>
+    <aside>
+        <img class="logo" src="http://poplavskygroup.ru/static/img/Logo.svg" alt="">
+        <nav>
+            <a href="#" class="link">Проекты</a>
+            <a href="#" class="link">Заявки</a>
+            <a href="#" class="link">Настройки сайта</a>
+        </nav>
+    </aside>
+
+
+
+
+
+    <section id="projects">
+        <h1>Проекты</h1>
+        <div class="filters">
+
+
+            <input type="search" name="search" id="" placeholder="Поиск по названию">
+            <label for="active">Видны на сайте</label>
+            <input type="checkbox" name="active" id="">
+            <select>
+                <option value="" aria-checked="true">Категория</option>
+                <option value="some">soome 1ome 1ome 1me 1</option>
+                <option value="some">some 2</option>
+                <option value="some">some 3</option>
+                <option value="some">some 4</option>
+            </select>
+
+
+            <a href="" class="add">Добавить</a>
+        </div>
+        <ul class="projects-list">
+            <li data-category="B2C">
+                <div class="img_wrap">
+                    <img src="http://poplavskygroup.ru/media/Cases/%D0%BF%D1%80%D0%B5%D0%B2%D1%8C%D1%8E.jpg" alt=""
+                        srcset="">
+                </div>
+                <h3 class="title">КВАРТИРА "СКАНДИНАВИЯ"</h3>
+                <div>
+                    <span>Категория</span>
+                    <span class="category">B2C</span> <span class="display true" title="Видимость на сайте"></span>
+                </div>
+
+                <p class="short-dsecripton">
+                    Однокомнатная квартира в скандинавском стиле для молодого человека.
+                </p>
+                <a href="">Посмотреть</a>
+                <a href="">Изменить</a>
+            </li>
+            <li data-category="B2C">
+                <div class="img_wrap">
+                    <img src="http://poplavskygroup.ru/media/Cases/%D0%BF%D1%80%D0%B5%D0%B2%D1%8C%D1%8E.jpg" alt=""
+                        srcset="">
+                </div>
+                <h3 class="title">КВАРТИРА "СКАНДИНАВИЯ"</h3>
+                <div>
+                    <span>Категория</span>
+                    <span class="category">B2C</span> <span class="display false" title="Видимость на сайте"></span>
+                </div>
+
+                <p class="short-dsecripton">
+                    Однокомнатная квартира в скандинавском стиле для молодого человека.
+                </p>
+                <a href="">Посмотреть</a>
+                <a href="">Изменить</a>
+            </li>
+        </ul>
+    </section>
+</body>
+<script src="static/js/dist/adminMaster.dev.js"></script>
+
+</html>

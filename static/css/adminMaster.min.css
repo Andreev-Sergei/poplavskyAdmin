@@ -1,0 +1,1 @@
+body,html{overflow-x:hidden;max-width:100vw;padding:0;margin:0}aside{position:fixed;display:grid;left:0;height:100vh;width:250px;background:#242424}aside img.logo{max-width:150px;margin:20px;justify-self:center}aside a.link{color:#fcfcfc}
