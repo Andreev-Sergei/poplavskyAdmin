@@ -148,3 +148,41 @@ aside
             &.false
                 background: $grey
             
+#project
+    padding: 0
+    h1
+        margin:  20px
+    article
+        padding: 20px
+        display: grid
+        grid-template-columns: repeat(3,1fr)
+        grid-gap: 20px
+        align-items: start
+        &.category, &.price
+            justify-items: start
+            justify-content: start
+  
+        input ,textarea
+            padding: 5px
+        &.preview
+            picture
+                grid-column: 2/4
+                max-width: 100%
+                display: grid
+                align-items: center
+                input#preview
+                    padding: 0
+                    margin: 10px 0
+                #previewOutput
+                    transition: .5s
+                    min-height: 1px
+                    max-height: 450px
+        &.price 
+            
+        &.seo
+            grid-template-columns: 1fr 
+
+      
+        &:nth-child(even)
+            background: #f8f8f8
+            
