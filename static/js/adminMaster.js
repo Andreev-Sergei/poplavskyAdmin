@@ -55,6 +55,7 @@ document.querySelectorAll('#requests .tabs .tab').forEach(btn => {
     btn.addEventListener('click', (event) => {
         document.querySelector('#requests .tabs .tab.active').classList.remove('active')
         event.target.classList.add('active')
+
         let sortVariable = event.target.dataset.type
         alert(sortVariable)
     })
