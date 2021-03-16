@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/adminMaster.css">
+    <title>POPLAVSKY ADMIN</title>
+</head>
+
+<body>
+    <aside>
+        <img class="logo" src="http://poplavskygroup.ru/static/img/Logo.svg" alt="">
+        <nav>
+            <a href="index.html" class="link">Проекты</a>
+            <a href="requests.html" class="link">Заявки</a>
+            <a href="#" class="link">Настройки сайта</a>
+        </nav>
+    </aside>
+
+
+
+
+
+    <section id="project">
+        <h1> </h1>
+        <article class="preview">
+            <label for="">Преввью:</label>
+            <picture>
+
+                <input type="file" name="" id="preview" onchange="previewFile()">
+                <img id='previewOutput' src="">
+            </picture>
+        </article>
+        <article class="category">
+            <label for="">Категория:</label>
+            <select name="" id="">
+                <option value="">Some</option>
+                <option value="">Some</option>
+                <option value="">Some</option>
+                <option value="">Some</option>
+            </select>
+        </article>
+        <article>
+            <label for=""></label>
+            <span>RU</span>
+            <span>ENG</span>
+        </article>
+        <article>
+            <label for="">Название проекта:</label>
+            <input id="projectTitle" type="text">
+            <input type="text">
+        </article>
+        <article>
+            <label for="">Краткое писание проекта:</label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </article>
+        <article>
+            <label for="">Описание проекта:</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </article>
+        <article class="price">
+            <label for="">Цена</label>
+            <input type="number" name="" id="" placeholder="$">
+            <input type="number" name="" id="" placeholder="₽">
+        </article>
+        <article>
+            <label for="">Стиль проекта:</label>
+            <input type="text">
+            <input type="text">
+        </article>
+        <article>
+            <label for="">Лоцакия:</label>
+            <input type="text">
+            <input type="text">
+        </article>
+        <article class="category">
+            <label for="">Год проекта:</label>
+            <select name="" id="">
+                <option value="">1990</option>
+                <option value="">...</option>
+                <option value="">...</option>
+                <option value="">2021</option>
+            </select>
+        </article>
+
+
+        <article class="areas">
+            <label for="">Площади:</label>
+            <div class="areas-grid">
+                <div draggable="true" class="area">
+                    <p>Bedroom area</p>
+                    <small>29 м²</small>
+                    <a calss="change" href="#">Изменить</a>
+                </div>
+                
+                <a href="" class="area add">
+                    +
+                </a>
+            </div>
+        </article>
+        <article class="seo">
+            <label for="">SEO keywords (через запятую) :</label>
+            <textarea name="" id="" cols="30" rows="5"></textarea>
+        </article>
+
+    </section>
+    <div class="modal">
+        <h2></h2>
+       
+        <a href=""  class="btn">Сохранить</a>
+    </div>
+    <div id="overlay"></div>
+</body>
+<script src="static/js/adminMaster.js"></script>
+
+</html>

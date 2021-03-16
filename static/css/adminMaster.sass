@@ -2,7 +2,7 @@
 
 $dark-schema: #242424
 $grey: #B1B1B1
-
+$red: #DA2525
 @mixin _1440
   @media (max-width: 1440px)
     @content
@@ -78,6 +78,9 @@ aside
     a.link
         color: #fcfcfc
         text-decoration: none
+        transition: .5s
+        &:hover
+            color: $red
 
 #projects
     .filters
@@ -164,7 +167,6 @@ aside
         &.category, &.price
             justify-items: start
             justify-content: start
-  
         input ,textarea
             padding: 5px
         &.preview
@@ -181,7 +183,48 @@ aside
                     min-height: 1px
                     max-height: 450px
         &.price 
-            
+        &.areas
+            grid-template-columns: 1fr
+            .areas-grid
+                display: flex
+                flex-wrap: wrap
+                .area
+                    cursor: move
+                    overflow: hidden
+                    display: inline-grid
+                    align-items: center
+                    justify-items: center
+                    align-content: center
+                    padding: 32px 16px 
+                    min-width: 150px
+                    max-width: 200px
+                    background: #333
+                    color: $grey
+                    border-radius: 8px
+                    margin-right: 8px
+                    margin-bottom: 8px
+                    grid-gap: 8px
+                    border: 3px dotted $dark-schema
+                    &.over
+                        border: 3px dotted $red
+                    p
+                        margin: 0
+                        color: red
+                        text-align: center
+                        font-size: 14px
+                    a
+                        color: #fcfcfc
+                        font-size: 10px
+                    &.add
+                        text-decoration: none
+                        color: #ffffff
+                        font-weight: 300
+                        -webkit-user-drag: none
+                        user-drag: none
+                        font-size: 32px
+                        cursor: pointer
+                        
+                        
         &.seo
             grid-template-columns: 1fr 
 
@@ -190,7 +233,6 @@ aside
             background: #f8f8f8
             
 #requests
-    
     .tabs
         .tab
             cursor: pointer
@@ -235,20 +277,44 @@ aside
             border-bottom: 1px solid #e0e0e0
             border-bottom-left-radius: 8px
             border-bottom-right-radius: 8px
-            
-
 .modal
     width: 1024px
     height: 100vh
     background: #fff
     display: grid
+    align-content: start
+    grid-gap: 16px
     position: fixed
+    padding: 16px 32px
+    box-sizing: border-box
     right: -1024px
     top: 0
     transition: .7s
     z-index: 100
     &.active
         right: 0
+    
+    article
+        display: grid
+        padding: 16px 0
+        grid-gap: 32px
+        grid-template-columns: 1fr 1fr 1fr
+        &:nth-child(odd)
+            background: #f8f8f8
+    .btn
+        position: absolute
+        bottom: 16px
+        right: 32px 
+        padding:  16px 32px
+        background: $dark-schema
+        color: #fcfcfc
+        border-radius: 32px
+        text-decoration: none
+        font-size: 14px
+        transition: .3s
+        &:hover
+            background: lighten($dark-schema, 20)
+            
 #overlay
     position: fixed
     top: 0
