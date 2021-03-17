@@ -281,7 +281,7 @@ aside a.link:hover {
   align-content: start;
   grid-gap: 16px;
   position: fixed;
-  padding: 16px 32px;
+  padding: 16px 0;
   box-sizing: border-box;
   right: -1024px;
   top: 0;
@@ -291,14 +291,20 @@ aside a.link:hover {
 .modal.active {
   right: 0;
 }
+.modal h2 {
+  margin: 8px 32px;
+}
 .modal article {
   display: grid;
-  padding: 16px 0;
+  padding: 16px 32px;
   grid-gap: 32px;
   grid-template-columns: 1fr 1fr 1fr;
 }
 .modal article:nth-child(odd) {
   background: #f8f8f8;
+}
+.modal article input {
+  padding: 5px;
 }
 .modal .btn {
   position: absolute;
