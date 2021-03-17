@@ -233,6 +233,7 @@ aside
             background: #f8f8f8
             
 #requests
+    overflow: hidden
     .tabs
         .tab
             cursor: pointer
@@ -260,6 +261,7 @@ aside
         border-top-right-radius: 8px
         background: #f8f8f8
     .request
+        
         display: grid
         grid-template-columns:  1fr 1fr 1fr 1fr  1fr
         padding:  16px
@@ -267,6 +269,7 @@ aside
         border-right: 1px solid #e0e0e0
         transition: .3s
         cursor: pointer
+        overflow: hidden
         span
             font-size: 12px
         &:nth-child(even)
@@ -277,6 +280,8 @@ aside
             border-bottom: 1px solid #e0e0e0
             border-bottom-left-radius: 8px
             border-bottom-right-radius: 8px
+        &[data-status='false']
+            display: none
 .modal
     width: 1024px
     height: 100vh
